@@ -1,0 +1,20 @@
+include: package:very_good_analysis/analysis_options.2.4.0.yaml
+
+linter:
+  rules:
+    public_member_api_docs: false
+    comment_references: false
+    library_private_types_in_public_api: false
+    omit_local_variable_types: false
+    avoid_dynamic_calls: false
+    use_setters_to_change_properties: false
+    prefer_asserts_with_message: false
+
+analyzer:
+  strong-mode:
+    implicit-dynamic: false
+    implicit-casts: true
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gen.dart"
